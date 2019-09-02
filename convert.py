@@ -26,7 +26,7 @@ class Convert():
     # Read the csv file
     #
     def read_csv(self):
-        csv_reader = csv.reader(open(self.CSV_FILE_LOCATION, 'rb'))
+        csv_reader = csv.reader(open(self.CSV_FILE_LOCATION, 'rt'))
         i = 0
         for row in csv_reader:
             if i < self.HEADER_COLUMNS_TO_SKIP:
